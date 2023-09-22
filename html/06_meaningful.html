@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 같은 볼드체지만 의미가 다르다.
+    strong 태그는 강조하는 의미(검색엔진 or 시각장애인용 스크립리더)
+    -->
+    <p style="font-weight: bold">볼드체</p>
+
+    <p><b>볼드체</b>입니다.</p>
+
+    <p><strong>강조하는 볼드체</strong>입니다.</p>
+    <!-- 같은 이탤릭체지만 의미가 다르다.
+    em 태그는 강조하는 의미(검색엔진 or 시각장애인용 스크립리더)  -->
+    <p style="font-style: italic">이탤릭체입니다.</p>
+    <i>이탤릭체입니다.</i>
+    <p><em>이탤릭체입니다.</em></p>
+
+    <p>텍스트가<small> 작게 </small>보이게 됩니다.</p>
+
+    <!-- 마크업하는 부분도 p태그에서 style 태그로 만들 수 있지만 의미가 다르다. -->
+    <p>집에오는 길에 <mark> 우유 </mark>를 사는것을 잊지 마라.</p>
+    <p>
+      집에 오는 길에<span style="background-color: yellow; color: black">
+        우유 </span
+      >를 사는것을 잊지 마라.
+    </p>
+    <p>제품 할인중 <del>3만원</del> 2만8천원</p>
+    <p style="text-decoration: line-through">30000원</p>
+
+    <p>내가 제일 좋아하는 색상은 <ins>노란색</ins>입니다.</p>
+    <p style="text-decoration: underline">노란색</p>
+
+    <p>X<sub>2</sub></p>
+    <p>X<sup>2</sup></p>
+
+    <!-- 어떤 긴 문장을 인용하고 싶을 때 사용하는 blockquote 
+        blockquote의 cite는 인용한곳의 주소를 입력 -->
+    <!-- 짧은 문장 인용은 q태그 사용-->
+    <blockquote cite="https://naver.com">
+      ㅁㄴㅇㅁㄴㅁㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ
+    </blockquote>
+    <q>짧은 인용</q>
+    <br />
+    <!-- abbr태그의 title은 약자의 풀네임을 보여준다. -->
+    <abbr title="World Health Organizaion">WHO</abbr>
+
+    <!-- address 태그는 주소를 입력 -->
+    <address>대한민국 제주특별자치도 제주시 무슨동 몇번지</address>
+
+    <!-- 인용태그에서 사용되는 cite와 철자가 같지만 작품, 책, 음반, 제품명등을 나타내는 것 -->
+    <p style="font-size: large">
+      <cite>절규</cite>는 뭉크가 1893년에 그린 그림입니다.
+    </p>
+    <p><cite>개발자의품격</cite>은 유튜브 채널입니다.</p>
+
+    <!-- 핵심은 똑같이 보이게 하는 방법은 많지만 태그에 의미를 담아서 사용할 수 있는 방법이 있다. -->
+
+    <!-- 의미가 없는 태그 div, span -->
+    <!-- 1. 다른 태그를 담는 컨테이너의 역할 -->
+    <!-- 2. 화면에 콘텐츠(태그)를 배치하기 위한 레이아웃 용도 -->
+
+    <!-- div 태그를 block 요소라고 한다.(컨텐츠 크기와 상관없이 한 줄을 모두 차지) : div , h1~h6, p 모두 마찬가지 -->
+    <!-- span 태그를 inline 요소라고 한다.(컨텐츠 크기만큼 공간을 차지한다.) -->
+
+    <div style="background-color: yellow">div 태그입니다.</div>
+    <span style="background-color: green">span 태그입니다.</span>
+  </body>
+</html>

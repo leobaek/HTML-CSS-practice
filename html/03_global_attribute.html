@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 기본언어 설정 lang -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 draggable="true">움직일 수 있는 태그</h1>
+    <p lang="ko">대한민국</p>
+    <p hidden>이 문장은 화면에 보이지 않습니다.</p>
+    <a
+      href="https://google.com"
+      id="google"
+      title="클릭하면 구글 사이트로 이동합니다."
+      >구글</a
+    >
+
+    <!-- br태그는 줄바꿈할 때 사용 -->
+    <br />
+
+    <!-- for은 input에 대해 연결해주는 것 
+    ***for은 글로벌 속성이 아님***-->
+    <label for="userId">사용자 아이디</label>
+    <input type="text" name="" id="userId" />
+    <br />
+    <!-- spellcheck는 스펠링 틀린것을 확인할 수 있게 빨간 밑줄이 뜸, contenteditable은 수정가능하게 만들어 줌 -->
+    <p spellcheck="true" contenteditable="true">This is a paraggraph</p>
+    <!-- 스타일 속성의 color로 색상을 바꿀 수 있다.
+    세미 콜론을 하고 여러가지 기능을 넣을 수 있다.  -->
+    <p style="color: red; background-color: yellow">빨간색 문장입니다.</p>
+
+    <!-- 키보드 tab키는 사용자가 선택할 수 있는 요소들로 이동하게 되는데 tabindex로 순서를 지정할 수 있다.  -->
+    <a href="" tabindex="1">네이버</a>
+    <a href="" tabindex="2">구글</a>
+    <a href="" tabindex="3">민우 블로그</a>
+    <a href="" tabindex="4">테스트</a>
+    <button title="주문 버튼을 클릭하면 선택한 제품에 대한 주문이 진행됩니다.">
+      주문
+    </button>
+  </body>
+</html>
