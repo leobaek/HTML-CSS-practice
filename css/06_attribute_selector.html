@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* 속성 선택자 */
+      /* 속성을 [] 안에서 찾아서 반영 */
+      /* 태그안의 속성도 찾아서 반영할 수 있음 ( 태그명[속성=속성값]) */
+      /* 또 클래스 선택자로 속성선택자 앞에 .클래스이름 으로 특정 위치를 찾을 수 있음 */
+      .box1 input[type="text"] {
+        border: 2px solid red;
+      }
+
+      [name="email"] {
+        border: 3px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <input type="text" name="" id="" />
+      <input type="email" name="email" id="" />
+      <input type="date" name="" id="" />
+    </div>
+    <input type="text" name="" id="" />
+    <input type="email" name="email" id="" />
+    <input type="date" name="" id="" />
+  </body>
+</html>

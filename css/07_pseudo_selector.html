@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* 가상 클래스 */
+      a {
+        text-decoration: none;
+      }
+
+      /* hover 사용자가 마우스를 a태그에 올려놓는 순간 */
+      a:hover {
+        background-color: blue;
+        color: white;
+      }
+
+      /* 방문한 적이 없는 링크는 파란색으로 보인다.  */
+      a:link {
+        color: red;
+      }
+
+      /* 방문한 적이 있는 링크 */
+      a:visited {
+        color: green;
+      }
+
+      button:hover {
+        color: white;
+        background-color: green;
+      }
+
+      /* 마우스가 포커스 됐을 때 */
+      input:focus {
+        border: 5px solid red;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      table {
+        width: 100%;
+      }
+      /* 2n 혹은 even : 짝수행 */
+      /* 2n + 1 혹은 odd : 홀수행 */
+      tbody > tr:nth-child(even) {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://naver.com" target="_blank">네이버</a>
+    <a href="https://google.com" target="_blank">구글</a>
+    <a href="http://asdasdad.com">가짜 사이트</a>
+    <br />
+    <button>조회</button>
+    <br />
+    <input type="text" name="" id="" />
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>김종국</td>
+          <td>010-2131-2123</td>
+          <td>kim@naver.com</td>
+        </tr>
+        <tr>
+          <td>송지효</td>
+          <td>010-2131-2123</td>
+          <td>song@naver.com</td>
+        </tr>
+        <tr>
+          <td>양세찬</td>
+          <td>010-2131-2123</td>
+          <td>yang@naver.com</td>
+        </tr>
+        <tr>
+          <td>유재석</td>
+          <td>010-2131-2123</td>
+          <td>asdikjw@naver.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
